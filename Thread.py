@@ -29,7 +29,7 @@ class Thread(threading.Thread):
             if event == 'line':
                 raise SystemExit()
         if self.__Parent is not None:
-            if not self.__Parent.isAlive():
+            if not self.__Parent.is_alive():
                 raise SystemExit()
         return self.__localtrace
 
